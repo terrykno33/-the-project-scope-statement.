@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiny House Project</title>
+</head>
+<body>
+
+<h1>Tiny House Construction Project</h1>
+
+<h2>Purpose of the Project</h2>
+<p>
+The purpose of this project is to design and construct a fully functional, code-compliant tiny house.
+</p>
+
+<h2>Scope</h2>
+
+<h3>In Scope</h3>
+<ul>
+    <li>Architectural floorplans</li>
+    <li>Foundation work</li>
+    <li>Framing</li>
+    <li>Roof installation</li>
+    <li>MEP rough-in</li>
+</ul>
+
+<h3>Out of Scope</h3>
+<ul>
+    <li>Interior decoration</li>
+    <li>Landscaping</li>
+    <li>Smart systems</li>
+</ul>
+
+<h2>Deliverables</h2>
+<ul>
+    <li>Approved design</li>
+    <li>Completed foundation</li>
+    <li>Framed structure</li>
+    <li>Installed roof</li>
+    <li>MEP system</li>
+</ul>
+
+<h2>Budget</h2>
+<ul>
+    <li>Design: $800</li>
+    <li>Foundation: $5,500</li>
+    <li>Framing: $2,000</li>
+    <li>Roofing: $2,500</li>
+    <li>Siding: $2,300</li>
+    <li>MEP: $6,000</li>
+    <li>Inspection: $1,200</li>
+</ul>
+
+</body>
+</html>
