@@ -1,211 +1,129 @@
 # -the-project-scope-statement.
-Provide an example of a selected section of the project scope statement.
-this is exactly the kind of thing CodeSwing is great for. We’ll turn your assignment into a clean, interactive mini “project dashboard” using HTML + CSS (and optional JS later if you want).
+1. GitHub Repository Description
 
-🧱 1. Folder Structure (Create This First)
+Repository Name: Tiny-House-Construction
+Description:
+This repository contains the complete Tiny House Construction Project, including WBS Dictionary, project scope, design files, HTML/CSS templates, and CodeSwing examples. It serves as a structured blueprint for pre-construction, construction, and close-out phases of the project.
 
-Inside your repository, set it up like this:
+2. Folder Structure & README.md
 
-tiny-house-project/
+Folder Structure:
+
+Tiny-House-Construction/
 │
-├── index.html
-├── style.css
-├── script.js (optional for later)
-│
-├── /assets
-│   ├── gantt.png (if you add image later)
-│
-└── /docs
-    └── project.docx (your Word file if you export it)
+├── README.md
+├── WBS/
+│   └── WBS-Dictionary-Tiny-House.md
+├── Scope/
+│   └── Tiny_House_Project_Scope_Statement.md
+├── CodeSwing/
+│   └── code_examples.swing
+├── HTML/
+│   └── index.html
+├── CSS/
+│   └── style.css
+└── Assets/
+    └── images/
 
-👉 In VS Code:
+README.md:
 
-Right-click → New Folder / New File
+# Tiny House Construction Project
 
-Or use terminal:
+## Overview
+This project organizes all resources, designs, and templates for the Tiny House Construction Project. It follows the WBS Dictionary and Project Scope Statement for clarity and efficiency.
 
-mkdir tiny-house-project
-cd tiny-house-project
-mkdir assets docs
-touch index.html style.css script.js
-🖥️ 2. CodeSwing Setup
+## Folder Structure
+- **WBS/**: Work Breakdown Structure Dictionary
+- **Scope/**: Project Scope Statement
+- **CodeSwing/**: CodeSwing project files
+- **HTML/**: HTML templates for project documentation or web previews
+- **CSS/**: Stylesheets for HTML
+- **Assets/**: Images and media
 
-If you're using CodeSwing:
+## Usage
+1. Review the WBS Dictionary to understand task breakdown.
+2. Follow the Project Scope Statement for project boundaries.
+3. Open HTML and CSS files for web-based project previews.
+4. Load CodeSwing files in CodeSwing IDE for interactive coding.
 
-Open the folder
-
-Open index.html
-
-CodeSwing will auto-render the UI as you build it
-
-📄 3. HTML (Main Project Dashboard)
-
-Paste this into index.html:
-
+## Author
+[Your Name Here]
+3. HTML Template (index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tiny House Project</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny House Construction Project</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
+    <header>
+        <h1>Tiny House Construction Project</h1>
+    </header>
 
-<div class="container">
-
-    <h1>Tiny House Construction Project</h1>
-    <p><strong>Project Manager:</strong> Your Name</p>
-    <p><strong>Timeline:</strong> Jan 2 – Jan 21, 2025</p>
-
-    <section>
-        <h2>Purpose</h2>
-        <p>
-            Design and construct a fully functional, code-compliant tiny house,
-            including structural build and MEP rough-in.
-        </p>
+    <section id="overview">
+        <h2>Project Overview</h2>
+        <p>This project organizes all resources, designs, and templates for the Tiny House Construction Project.</p>
     </section>
 
-    <section>
-        <h2>Scope</h2>
-
-        <h3>In Scope</h3>
-        <ul>
-            <li>Architectural plans</li>
-            <li>Foundation work</li>
-            <li>Framing & roofing</li>
-            <li>Siding</li>
-            <li>MEP rough-in</li>
-        </ul>
-
-        <h3>Out of Scope</h3>
-        <ul>
-            <li>Interior decoration</li>
-            <li>Landscaping</li>
-            <li>Smart systems</li>
-        </ul>
+    <section id="wbs">
+        <h2>WBS Dictionary</h2>
+        <p>All work packages, owners, dependencies, resources, and timelines are detailed here.</p>
     </section>
 
-    <section>
-        <h2>Deliverables</h2>
-        <ul>
-            <li>Approved design</li>
-            <li>Completed foundation</li>
-            <li>Framed structure</li>
-            <li>Installed roof & siding</li>
-            <li>MEP system</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Budget</h2>
-        <table>
-            <tr><th>Category</th><th>Cost</th></tr>
-            <tr><td>Design</td><td>$800</td></tr>
-            <tr><td>Foundation</td><td>$5,500</td></tr>
-            <tr><td>Framing</td><td>$2,000</td></tr>
-            <tr><td>Roofing</td><td>$2,500</td></tr>
-            <tr><td>Siding</td><td>$2,300</td></tr>
-            <tr><td>MEP</td><td>$6,000</td></tr>
-            <tr><td>Inspection</td><td>$1,200</td></tr>
-            <tr><th>Total</th><th>$21,500</th></tr>
-        </table>
-    </section>
-
-    <section>
-        <h2>Gantt Timeline</h2>
-        <div class="gantt">
-            <div class="task" style="width:20%">Finalize Floorplan</div>
-            <div class="task" style="width:20%">Contract</div>
-            <div class="task" style="width:30%">Foundation</div>
-            <div class="task" style="width:20%">Framing</div>
-            <div class="task" style="width:20%">Roof</div>
-            <div class="task" style="width:20%">Siding</div>
-            <div class="task" style="width:30%">MEP</div>
-        </div>
-    </section>
-
-</div>
-
+    <footer>
+        <p>&copy; 2026 Tiny House Project</p>
+    </footer>
 </body>
 </html>
-🎨 4. CSS Styling (Makes It Look Professional)
-
-Paste into style.css:
-
+4. CSS Template (style.css)
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    background: white;
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-    color: #2c3e50;
-}
-
-h2 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
+/* Footer */
+footer {
+    text-align: center;
     padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #3498db;
-    color: white;
-}
-
-.gantt {
+    background-color: #eee;
     margin-top: 20px;
 }
+5. CodeSwing Template (code_examples.swing)
+// Tiny House Project CodeSwing Template
+// Interactive JS Example for Project Planning
 
-.task {
-    background: #2ecc71;
-    color: white;
-    padding: 8px;
-    margin: 5px 0;
-}
-🚀 5. What You Just Built
+console.log("Welcome to Tiny House Construction Project");
 
-This gives you:
+let tasks = [
+    { id: "1.1.1.1", name: "Finalize Floorplan", owner: "Architect", status: "Complete" },
+    { id: "1.1.1.2", name: "Execute Construction Contract", owner: "Project Manager", status: "Complete" },
+    { id: "1.2.1.1", name: "Pour & Cure Cement", owner: "Crew Lead", status: "In Progress" }
+];
 
-A visual project dashboard
-
-Clean academic structure
-
-A basic Gantt-style visualization
-
-Something you can demo in class (huge bonus)
-
-🔥 Next Level (If You Want)
-
-I can upgrade this into:
-
-Real interactive Gantt chart (drag + timeline)
-
-Export to PDF button
-
-Editable fields (like a real PM tool)
-
-React version (portfolio-worthy project 🔥)
+tasks.forEach(task => {
+    console.log(`Task: ${task.name}, Owner: ${task.owner}, Status: ${task.status}`);
+});
